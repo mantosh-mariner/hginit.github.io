@@ -441,3 +441,119 @@ div.about {
     background-image: url(/i/homenav-6-1.png);
   }
 }
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Responsive Layout */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Make all images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Wrapper for page content */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+/* Intro text and body content responsiveness */
+.intro-text, 
+.body-content {
+  font-size: 1rem;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+/* Responsive typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin: 15px 0;
+  text-align: center;
+}
+
+/* Header image and heading */
+.page-header {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.page-header img {
+  width: 100%;
+  height: auto;
+}
+
+/* Menu and navigation responsiveness */
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.nav-item {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Home navigation improvements */
+.home-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.home-nav .home-item {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .intro-text, 
+  .body-content {
+    font-size: 0.9rem;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .home-nav .home-item {
+    flex: 1 1 100%;
+  }
+}
+
