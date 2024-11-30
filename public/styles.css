@@ -1,4 +1,10 @@
 @charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /*  We use https://systemfontstack.com/ for all 3 cases */
 html > body {
   overflow-x: auto;
@@ -442,11 +448,7 @@ div.about {
   }
 }
 /* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 /* Responsive Layout */
 body {
